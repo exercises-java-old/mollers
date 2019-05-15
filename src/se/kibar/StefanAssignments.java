@@ -1,5 +1,6 @@
 package se.kibar;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class StefanAssignments {
@@ -49,6 +50,51 @@ public class StefanAssignments {
                     System.out.println("Felaktig inmatning, vänligen svara ja eller nej.");
                 }
             }
+        }
+
+    }
+
+    public void ovning45() {
+
+        //the classic method: Math.random() found in many languages
+        double random = Math.random();
+
+        //The Java-specific class Random
+        Random rand = new Random();
+
+        int num1 = rand.nextInt(100)+1;
+        int num2 = rand.nextInt(100)+1;
+        int answer = 0;
+        int input = 0;
+
+        System.out.println("Vilken operation?");
+
+        String operator = scanner.nextLine();
+
+        switch (operator) {
+            case "+":
+                answer = num1 + num2;
+                System.out.println("Vad blir " + num1 + "+" + num2 + "?");
+                input = scanner.nextInt();
+                scanner.nextLine();
+
+                break;
+            case "-":
+                answer = num1 - num2;
+                System.out.println("Vad blir " + num1 + "-" + num2 + "?");
+                input = scanner.nextInt();
+                scanner.nextLine();
+
+                break;
+            default:
+                System.out.println("Invalid input, only +/- allowed.");
+                break;
+        }
+
+        if(answer == input){
+            System.out.println("Grattis!");
+        }else{
+            System.out.println("Försök igen!");
         }
 
     }

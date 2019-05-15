@@ -11,8 +11,8 @@ public class Main {
         //main.ovning1();
         //main.ovning2();
         //main.ovning3();
-        //StefanAssignments sa = new StefanAssignments();
-        //sa.ovning4();
+        StefanAssignments sa = new StefanAssignments();
+        sa.ovning45();
 
         /*
         //Ett exempel på skillnaden mellan referens och värde
@@ -20,10 +20,12 @@ public class Main {
         //stefan.MAX_VALUE;
         Integer jozef = 7;
         System.out.println(jozef.TYPE);
-        */
+
         String sargon = "5/7";
         char stefan = sargon.charAt(1);
         System.out.println(stefan);
+        */
+
     }
 
     public void ovning1() {
