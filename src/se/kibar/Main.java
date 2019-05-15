@@ -12,7 +12,7 @@ public class Main {
         //main.ovning2();
         //main.ovning3();
         StefanAssignments sa = new StefanAssignments();
-        sa.ovning45();
+        sa.ovning6();
 
         /*
         //Ett exempel på skillnaden mellan referens och värde

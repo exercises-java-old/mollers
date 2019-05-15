@@ -62,8 +62,8 @@ public class StefanAssignments {
         //The Java-specific class Random
         Random rand = new Random();
 
-        int num1 = rand.nextInt(100)+1;
-        int num2 = rand.nextInt(100)+1;
+        int num1 = rand.nextInt(100) + 1;
+        int num2 = rand.nextInt(100) + 1;
         int answer = 0;
         int input = 0;
 
@@ -91,10 +91,54 @@ public class StefanAssignments {
                 break;
         }
 
-        if(answer == input){
+        if (answer == input) {
             System.out.println("Grattis!");
-        }else{
+        } else {
             System.out.println("Försök igen!");
+        }
+
+    }//RandomGeneration
+
+    public void ovning5() {
+        for (int i = 1; i <= 30; i++) {
+            System.out.print(i+" ");
+        }
+
+        System.out.println();
+
+        int i = 1;
+        while (i<=30) {
+            System.out.print(i+" ");
+            if(i%5 == 0){
+                System.out.print("\n");
+            }
+            i++;
+        }
+        System.out.println();
+
+        System.out.println(7%5);
+    }
+
+    public void ovning6(){
+        int i;
+        int start;
+        int stop;
+        int counter = 1;
+
+        System.out.print("Ange start: ");
+        start = scanner.nextInt();
+        System.out.print("Ange slut: ");
+        stop = scanner.nextInt();
+
+        i = start;
+
+        while(i <= stop){
+            System.out.print(i+" ");
+            if(counter%10 == 0){
+                System.out.println();
+            }
+            i++;
+            counter++;
         }
 
     }
