@@ -141,5 +141,40 @@ public class StefanAssignments {
             counter++;
         }
 
+        System.out.println();
+
+        i = start;
+        counter = 1;
+        while(i <= stop){
+            if(i%3 == 0){
+                System.out.print(i+" ");
+            }
+            if(counter%10==0){
+                System.out.println();
+            }
+            i++;
+            counter++;
+        }
+        scanner.close();
+    }
+
+    public void ovning7(){
+        int numOfVowels = 0;
+        String line;
+        char[] vowels = {'a','e','u','ü','i','o','j','å','ö','ä'};
+        System.out.print("Skriv en rad:");
+        line = scanner.nextLine();
+        line = line.toLowerCase();
+
+        for(int i=0; i<line.length() ; i++) {
+            for (int j = 0; j < vowels.length; j++) {
+                if (line.charAt(i) == vowels[j]) {
+                    numOfVowels++;
+                }
+            }
+        }
+        System.out.println("Raden innehöll "+line.length()+" tecken "+" varav "+numOfVowels+" var vokaler.");
+        System.out.println(Character.getNumericValue('K'));
+
     }
 }
